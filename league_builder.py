@@ -74,7 +74,7 @@ def gen_player_letters(team):
         player_name = player['Name'].split()
 
         #  gen file name from player name (rejoin with '_')
-        file_name = "player" + "_".join(player_name).lower() + ".txt"
+        file_name = "_".join(player_name).lower() + ".txt"
         with open(file_name, 'w') as file:
             # write header
             file.write("\n\n\t\t\tSoccer League -- Team {}\n\n".format(team['name']))
